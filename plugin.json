@@ -55,7 +55,7 @@
 		},
 		{
 			"field": "params.pin_post_on_homepage",
-			"label": "Pin post from pinned-post category on Homepage",
+			"label": "Pin post from pinnedpost category on Homepage",
 			"type": "boolean"
 		}
 	]	

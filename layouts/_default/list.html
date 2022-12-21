@@ -8,7 +8,7 @@
 
 <!-- Pinned Post -->
 {{ if .Site.Params.pin_post_on_homepage }}
-{{- range first 1 (where .Site.Taxonomies.categories.pinned-post.Pages) }}
+{{- range first 1 (where .Site.Taxonomies.categories.pinnedpost.Pages) }}
 <article class="post-entry-content">
   <section class="post-content highlight">{{ .Content }}</section>
 </article>
