@@ -5,16 +5,14 @@
 <!---->{{ if .IsHome }} {{ $pages = where site.RegularPages "Type" "post" }}
 {{ end }}
 
-
 <!-- Pinned Post -->
 {{ if .Site.Params.pin_post_on_homepage }}
-{{- range first 1 (where .Site.Taxonomies.categories.pinnedpost.Pages) }}
-<article class="post-entry-content">
-  <section class="post-content highlight">{{ .Content }}</section>
+{{ range first 1 .Site.Taxonomies.categories.pinnedpost }}
+<article class="post-entry-content pinned-post-entry-content">
+  <section class="post-content pinned-post-content">{{ .Content }}</section>
 </article>
-{{- end }}
 {{ end }}
-
+{{ end }}
 
 <!-- Articles -->
 {{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages }}
