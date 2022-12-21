@@ -1,7 +1,7 @@
 {
-	"version": "1.1.6",
+	"version": "1.2.0",
 	"title": "Paper theme",
-	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog.",
+	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog. Customized with more options.",
 	"fields": [
 		{
 			"field": "params.twitter",
@@ -51,6 +51,11 @@
 		{
 			"field": "params.full_content_on_homepage",
 			"label": "Display full post content on Homepage",
+			"type": "boolean"
+		},
+		{
+			"field": "params.pin_post_on_homepage",
+			"label": "Pin post from pinned-post category on Homepage",
 			"type": "boolean"
 		}
 	]	
