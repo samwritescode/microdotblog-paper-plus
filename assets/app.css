@@ -673,12 +673,6 @@ a.post-date.u-url {
   background: var(--black);
 }
 
-.pinned-post-content {
-  background: var(--fog);
-  padding: 20px;
-  font-size: 3.0rem;
-}
-
 /* Footer
  -------------------------------------------------- */
 .footer {

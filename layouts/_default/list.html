@@ -21,8 +21,14 @@
       {{ if .Title }}
         <h2>{{ .Title }}</h2>
       {{ end }}
-      <time><a href="{{ .Permalink }}">{{ .Date | time.Format ":date_medium" }} ⌘</a></time>
+      {{ if in .Params.categories "songalog" }} 🎧 {{ end }}
+      {{ if in .Params.categories "linkblog" }} 💘 {{ end }}
+      {{ if in .Params.categories "text" }} ⚡️ {{ end }}
+      {{ if in .Params.categories "photos" }} 📸 {{ end }}
+      <time> ⌘ {{ .Date | time.Format ":date_medium" }} ⌘ </time>
+      <a class="post-metadata" href="{{ .Permalink }}"> Permalink</a>
       <section class="post-content">{{ .Content }}</section>
+    
     </article>
     <hr class="post-separator">
   {{ else }}
