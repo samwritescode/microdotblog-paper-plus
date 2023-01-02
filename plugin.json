@@ -39,6 +39,11 @@
 			"placeholder": "Your Buy Me a Coffee username"
 		},
 		{
+			"field": "params.tumblr",
+			"label": "Tumblr",
+			"placeholder": "Your Tumblr username"
+		},
+		{
 			"field": "params.favicon",
 			"label": "Favicon Path",
 			"placeholder": "Path to the favicon to be used"

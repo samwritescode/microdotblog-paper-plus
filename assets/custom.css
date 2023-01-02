@@ -1,1 +1,14 @@
 /* Place custom css here. */
+
+
+.pinned-post-content {
+  background: var(--fog);
+  padding: 20px;
+  font-size: 3.0rem;
+}
+
+.post-metadata {
+  flex-shrink: 0;
+  font-size: 1.7rem;
+  color: var(--air);
+}
